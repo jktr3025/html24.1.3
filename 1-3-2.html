@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="java">
+        bong_array = new Array(5);
+        bong_array[0] = "봉은지"
+        bong_array[1] = "안녕하세요"
+        bong_array[2] = "12345678"
+        bong_array[3] = "010-2100-7376"
+        bong_array[4] = "여"
+
+        document.write("<h3>")
+
+        // for(초기값 ; 조건 ; 증감값){
+        //     조건에 만족할 동안 처리값
+        // }
+
+        for(var i=0; i<=4; i++){
+            document.write("[" + i + "]" + bong_array[i] + "<br>")
+        }
+
+        document.write("</h3>");
+
+        array1=new Array("사과", "배", "바나나")
+        // document.write(array1[1])
+        document.write(array1.join() + "<br>")
+        document.write(array1.join("와") + "<br>")
+        document.write(array1.join("&") + "<br>")
+        //join : 결합
+
+        array2=new Array("다", "나", "가")
+
+        document.write(array2.sort() + "<br>")
+        document.write(array1.sort() + "<br>")
+        // sort : 오름차순
+
+        
+        document.write(array2.reverse() + "<br>")
+        document.write(array1.reverse() + "<br>")
+        // reverse : 거꾸로
+
+        array3=array1.concat(array2);
+        document.write(array3 + "<br>")
+        //concat : 합쳐줌
+
+        array4=array3.slice(1,3)
+        document.write(array4 + "<br>")
+        // slice : 해당 인덱스 번호를 잘라서 가져옴
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

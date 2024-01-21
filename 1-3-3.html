@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script/jquery-3.7.1.js"></script>
+    <script lang="java">
+        $(function(){
+            var img_array = new Array("img/animal01.png","img/animal02.png","img/animal03.png",
+            "img/animal04.png","img/animal05.png","img/animal06.png")
+            var cont = img_array.length-1;
+            console.log(cont)
+
+            var n=0;
+            setInterval(function(){
+                if(n==cont){
+                    n=0;
+                }else{
+                    n++;
+                }//if
+                console.log(n)
+                var src = img_array[n]
+                console.log(src)
+
+                $("#img img").attr("src", src)
+
+
+
+            },1000)//setInterval(function
+
+
+
+
+
+
+        })//jquery
+
+    </script>
+</head>
+<body>
+    <p id="img"><img src="img/animal01.png" alt="animal01"></p>
+</body>
+</html>

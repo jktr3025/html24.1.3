@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="java">
+        
+        // String : 문자열
+        // length : 문자열 갯수
+        // big() : 좀더 크게
+        // small() : 좀더 작게
+        // .blink() : 깜빡이게 (현재지원 X)
+        // .bold() : 두껍게
+        // .fixed(): 타자기체 
+        // .italics():이태리체  
+        // .strike() : 취소선
+        // .sub() : 아래첨자
+        // .sup() : 윗첨자
+        // .fontsize(6) :
+        // .fontcolor(red) : 
+
+        function b_click(){
+            var str = new String("nice to meet you!");
+            var res = str.big();
+            document.getElementById("demo").innerHTML = res;
+
+        }
+        var str1 = "nice to meet you!";
+        var count = str1.length;
+        document.write(count)
+        document.write(str1.big())
+        document.write(str1.bold())
+        document.write(str1.fixed())
+        document.write(str1.italics())
+        document.write(str1.strike())
+        document.write(str1.sub())
+        document.write(str1.sup())
+
+        
+
+    </script>
+</head>
+<body>
+    <button onclick="b_click">클릭</button>
+    <p id="demo"></p>
+</body>
+</html>
